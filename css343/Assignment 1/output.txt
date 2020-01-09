@@ -1,0 +1,21 @@
+p1 = 2x^4-3.8x^3 + 2.2x^2 + 5x
+Test for changeCoefficient(0,2), with p1: p1 = 2x^4-3.8x^3 + 5x
+p2 =
+Test for operator =, with p2 = p1: p2 =
+p3 = 2x^4-3.8x^3 + 5x
+Test for operator +, with p3 = p1 + p2: p3 = 2x^4-3.8x^3 + 5x
+Test for default constructor, with defaultPoly:
+Test for copy consturctor, with copyPoly(p1): 2x^4-3.8x^3 + 5x
+Test for coefficient function, with p1 coeff power 3: -3.8
+Test for coefficient function, with p1 coeff power 1: 5
+Testing for degree function, with p1: 4
+Testing for degree function, with p7: 9
+Testing for += operator, with p1 = p1 + p2: 2x^4-3.8x^3 + 5x
+p4:7x^7 + 6x^6 + 5x^5
+p5:3x^7 + 1x^6 + 1x^5 + 2x^-2
+Testing for -= operator, p4 = p4 - p5: 4x^7 + 5x^6 + 4x^5-2x^-2
+Test for operator -, with p10 = p5 - p4: p10 = -1x^7-4x^6-3x^5 + 4x^-2
+Testing for == operator and operater !=, with p4 == p5: p4 and p5 are not the same
+
+C:\Users\Jun Zhen\OneDrive\Documents\OneDrive\CS\Prog1\Debug\Prog1.exe (process 11712) exited with code 0.
+Press any key to close this window . . .

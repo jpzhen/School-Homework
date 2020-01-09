@@ -1,0 +1,140 @@
+Testing for Node constructor: osdo
+Initial data:
+  iii not tttt eee r not and jj r eee pp r sssss eee not tttt ooo ff m m y z j lll aaaa ppp $$
+----------------------- Testing for Inorder Output -----------------------
+Tree Inorder:
+aaaa and eee ff iii j jj lll m not ooo pp ppp r sssss tttt y z
+                        z
+                    y
+                tttt
+                        sssss
+                    r
+                            ppp
+                        pp
+                            ooo
+            not
+                    m
+                        lll
+                jj
+                    j
+        iii
+                ff
+            eee
+                and
+                    aaaa
+----------------------- Testing for Retrieve -----------------------
+Retrieve --> and:  found
+Retrieve --> not:  found
+Retrieve --> sss:  not found
+----------------------- Testing for getHeight -----------------------
+Height    --> and:  2
+Height    --> not:  5
+Height    --> sss:  0
+Height    --> osodo:  0
+Height    --> eee:  3
+Height    --> t:  0
+----------------------- Testing for Comparable operator -----------------------
+T == T2?     equal
+T != first?  equal
+T == dup?    equal
+----------------------- Testing for BST to ARR and ARR to BST -----------------------
+                        z
+                    y
+                tttt
+                    sssss
+            r
+                        ppp
+                    pp
+                ooo
+                    not
+        m
+                        lll
+                    jj
+                j
+                    iii
+            ff
+                    eee
+                and
+                    aaaa
+---------------------------------------------------------------
+Initial data:
+  b a c b a c aa dd r t w $$
+----------------------- Testing for Inorder Output -----------------------
+Tree Inorder:
+a aa b c dd r t w
+                            w
+                        t
+                    r
+                dd
+            c
+        b
+                aa
+            a
+----------------------- Testing for Retrieve -----------------------
+Retrieve --> and:  not found
+Retrieve --> not:  not found
+Retrieve --> sss:  not found
+----------------------- Testing for getHeight -----------------------
+Height    --> and:  0
+Height    --> not:  0
+Height    --> sss:  0
+Height    --> osodo:  0
+Height    --> eee:  0
+Height    --> t:  2
+----------------------- Testing for Comparable operator -----------------------
+T == T2?     equal
+T != first?  not equal
+T == dup?    not equal
+----------------------- Testing for BST to ARR and ARR to BST -----------------------
+                    w
+                t
+            r
+                dd
+        c
+                b
+            aa
+                a
+---------------------------------------------------------------
+Initial data:
+  c b a r l p qq m $$
+----------------------- Testing for Inorder Output -----------------------
+Tree Inorder:
+a b c l m p qq r
+            r
+                        qq
+                    p
+                        m
+                l
+        c
+            b
+                a
+----------------------- Testing for Retrieve -----------------------
+Retrieve --> and:  not found
+Retrieve --> not:  not found
+Retrieve --> sss:  not found
+----------------------- Testing for getHeight -----------------------
+Height    --> and:  0
+Height    --> not:  0
+Height    --> sss:  0
+Height    --> osodo:  0
+Height    --> eee:  0
+Height    --> t:  0
+----------------------- Testing for Comparable operator -----------------------
+T == T2?     equal
+T != first?  not equal
+T == dup?    not equal
+----------------------- Testing for BST to ARR and ARR to BST -----------------------
+                    r
+                qq
+            p
+                m
+        l
+                c
+            b
+                a
+---------------------------------------------------------------
+Initial data:
+
+
+C:\Users\Jun Zhen\OneDrive\CS\Prog2\Debug\Prog2.exe (process 7560) exited with code 0.
+Press any key to close this window . . .
