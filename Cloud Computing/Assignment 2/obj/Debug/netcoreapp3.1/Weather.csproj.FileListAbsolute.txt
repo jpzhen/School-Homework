@@ -1,0 +1,13 @@
+/Users/jzhenmbp/Desktop/School/436/progs/ZhenJunProg2/bin/Debug/netcoreapp3.1/Weather
+/Users/jzhenmbp/Desktop/School/436/progs/ZhenJunProg2/bin/Debug/netcoreapp3.1/Weather.deps.json
+/Users/jzhenmbp/Desktop/School/436/progs/ZhenJunProg2/bin/Debug/netcoreapp3.1/Weather.runtimeconfig.json
+/Users/jzhenmbp/Desktop/School/436/progs/ZhenJunProg2/bin/Debug/netcoreapp3.1/Weather.runtimeconfig.dev.json
+/Users/jzhenmbp/Desktop/School/436/progs/ZhenJunProg2/bin/Debug/netcoreapp3.1/Weather.dll
+/Users/jzhenmbp/Desktop/School/436/progs/ZhenJunProg2/bin/Debug/netcoreapp3.1/Weather.pdb
+/Users/jzhenmbp/Desktop/School/436/progs/ZhenJunProg2/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+/Users/jzhenmbp/Desktop/School/436/progs/ZhenJunProg2/obj/Debug/netcoreapp3.1/Weather.csprojAssemblyReference.cache
+/Users/jzhenmbp/Desktop/School/436/progs/ZhenJunProg2/obj/Debug/netcoreapp3.1/Weather.AssemblyInfoInputs.cache
+/Users/jzhenmbp/Desktop/School/436/progs/ZhenJunProg2/obj/Debug/netcoreapp3.1/Weather.AssemblyInfo.cs
+/Users/jzhenmbp/Desktop/School/436/progs/ZhenJunProg2/obj/Debug/netcoreapp3.1/Weather.csproj.CopyComplete
+/Users/jzhenmbp/Desktop/School/436/progs/ZhenJunProg2/obj/Debug/netcoreapp3.1/Weather.dll
+/Users/jzhenmbp/Desktop/School/436/progs/ZhenJunProg2/obj/Debug/netcoreapp3.1/Weather.pdb

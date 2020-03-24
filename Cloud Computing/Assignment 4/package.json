@@ -1,0 +1,19 @@
+{
+  "name": "ZhenJunProg4",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+    "azure-storage": "^2.10.3",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "^4.16.4",
+    "fs": "0.0.1-security",
+    "http-errors": "^1.7.3",
+    "morgan": "~1.9.1",
+    "node-fetch": "^2.6.0",
+    "pug": "^2.0.4"
+  }
+}

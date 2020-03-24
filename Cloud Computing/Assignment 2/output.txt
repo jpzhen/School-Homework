@@ -1,0 +1,39 @@
+Weather Report of Seattle US
+      Coordinates: 47.61, -122.33
+      Weather: light rain
+      Temperature: 35 degrees Fahrenhit
+      Feels Like: 30 degrees Fahrenhit
+      Humidity: 86%
+      Wind Speed: 1.03
+Cities Near By Seattle US
+      City 1: Mercer Island US, distance from Seattle US: 5.68 miles
+      City 2: Bellevue US, distance from Seattle US: 6.13 miles
+      City 3: Kirkland US, distance from Seattle US: 7.75 miles
+      City 4: Bainbridge Island US, distance from Seattle US: 8.92 miles
+
+Weather Report of Wuhan CN
+      Coordinates: 30.58, 114.27
+      Weather: scattered clouds
+      Temperature: 53 degrees Fahrenhit
+      Feels Like: 47 degrees Fahrenhit
+      Humidity: 40%
+      Wind Speed: 2
+Cities Near By Wuhan CN
+      City 1: Caidian CN, distance from Wuhan CN: 13.88 miles
+      City 2: Huangpi CN, distance from Wuhan CN: 21.83 miles
+      City 3: Hanchuan CN, distance from Wuhan CN: 30.09 miles
+      City 4: Ezhou Shi CN, distance from Wuhan CN: 31.23 miles
+
+Weather Report of London GB
+      Coordinates: 51.51, -0.13
+      Weather: scattered clouds
+      Temperature: 49 degrees Fahrenhit
+      Feels Like: 39 degrees Fahrenhit
+      Humidity: 76%
+      Wind Speed: 6.2
+Cities Near By London GB
+      City 1: St. Thomas CA, distance from London GB: 14.74 miles
+      City 2: Woodstock CA, distance from London GB: 26.51 miles
+      City 3: Stratford CA, distance from London GB: 30.09 miles
+      City 4: Norfolk County CA, distance from London GB: 44.25 miles
+
