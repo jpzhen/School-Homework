@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready( () =>
+        {
+            $("#getInfo").click(() =>
+            {
+                let veg = $("input:radio[name=veggies]:checked").val();
+                if(veg == "Tomato")
+                {
+                    $("#replaceMe").html("Tomato, (Solanum lycopersicum), flowering plant of the nightshade family (Solanaceae), cultivated extensively for its edible fruits. Labelled as a vegetable for nutritional purposes, tomatoes are a good source of vitamin C and the phytochemical lycopene. The fruits are commonly eaten raw in salads, served as a cooked vegetable, used as an ingredient of various prepared dishes, and pickled. Additionally, a large percentage of the world’s tomato crop is used for processing; products include canned tomatoes, tomato juice, ketchup, puree, paste, and “sun-dried” tomatoes or dehydrated pulp.")
+                }
+                else if ( veg == "Beet")
+                {
+                    $("#replaceMe").html("Beet, (Beta vulgaris), any of the four cultivated forms of the plant Beta vulgaris (family Amaranthaceae), grown for their edible leaves and roots. Each of the four distinct types of B. vulgaris is used differently: (1) the common garden beet (also called beetroot or table beet) is cultivated as a garden vegetable; (2) Swiss chard (also called leaf beet or silver beet) is grown for its nutrient-rich leaves; (3) the sugar beet is commercially important as a major source of sugar; and (4) mangel-wurzel, or mangold, is a succulent feed for livestock.")
+                }
+                else if(veg == "Carrot")
+                {
+                    $("#replaceMe").html("Carrot, (Daucus carota), herbaceous, generally biennial plant of the Apiaceae family that produces an edible taproot. Among common varieties root shapes range from globular to long, with lower ends blunt to pointed. Besides the orange-coloured roots, white-, yellow-, and purple-fleshed varieties are known. Wild carrot (subspecies D. carota carota, also called Queen Anne’s lace) is native to Eurasia and is thought to have been domesticated in Central Asia around 1000 ce. Prehistoric seeds have been found in archaeological digs, suggesting that the plant was used medicinally before the domestication of its edible root. ")
+                }
+                else if(veg == "Potato")
+                {
+                    $("#replaceMe").html("Potato, (Solanum tuberosum), annual plant in the nightshade family (Solanaceae), grown for its starchy edible tubers. The potato is native to the Peruvian-Bolivian Andes and is one of the world’s main food crops. Potatoes are frequently served whole or mashed as a cooked vegetable and are also ground into potato flour, used in baking and as a thickener for sauces. The tubers are highly digestible and supply vitamin C, protein, thiamin, and niacin.");
+                }
+                else
+                {
+                    alert("SELECT A VEGETABLE")
+                }
+            });
+        });
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .content
+    {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="content">
+        <h1>Veggie Feedback</h1>
+        <form>
+            <div style="display: inline-block; text-align: left;">
+                <input type="radio" name="veggies" id="Tomato" value="Tomato"> Tomato<br/> 
+                <input type="radio" name="veggies" id="Beet" value="Beet">Beet <br/> 
+                <input type="radio" name="veggies" id="Carrot" value="Carrot"> Carrot<br/> 
+                <input type="radio" name="veggies" id="Potato" value="Potato"> Potato<br/> 
+                <input type="button" id="getInfo" value="Get Info!">
+            </div>
+        </form>
+        <p id="replaceMe"></p>
+    </div>
+</body>
+</html>

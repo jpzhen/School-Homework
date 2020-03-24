@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('input.topboxes').on('change', function(evt) {
+                if($(this).siblings(':checked').length >= 3){
+                    this.checked = false;
+                }
+            });
+            $('input.sauceboxes').on('change', function(evt){
+                if($(this).siblings(':checked').length >= 1){
+                    this.checked = false;
+                }
+            });
+            $('input.sizeboxes').on('change', function(evt){
+                if($(this).siblings(':checked').length >= 1){
+                    this.checked = false;
+                }
+            });
+            $('input.crustboxes').on('change', function(evt){
+                if($(this).siblings(':checked').length >= 1){
+                    this.checked = false;
+                }
+            });
+            
+            $("#purchaseButt").click(function() {
+                let ans = 0
+                $('#topDiv').each(() => {
+                    alert(this.value);
+                });
+                $("input:checked").each(function() {
+                    ans += Number(this.value)
+                });
+                $("#changethis").html("$" + ans)
+                var size = document.getElementsByClassName("sizeDiv");
+                var toppin = document.getElementsByClassName("topDiv");
+                //calculate the size
+                for (var i=0; i<sizeDive.length; i++) {
+                    if(size.getElementById('smallsize').checked){
+                        var val1 = size.getElementById('smallsize').value
+                    }
+                }
+                
+            });
+        });
+    </script>
+</head>
+
+<style>
+    .content
+    {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="content">
+        <div style="display: inline-block; text-align: left;">
+            <h1> My Least Favourite Pizza Kitchen</h1>
+            <form>
+            <h3> Choose a pizza size </h3>
+            <div class="sizeDiv">
+                <input class="sizeboxes" type="radio" name = "sizes" value = "10.00" id="smallsize" > Small - $10 <br/>
+                <input class="sizeboxes" type="radio" name = "sizes" value = "13.00" > Medium - $13 <br/>
+                <input class="sizeboxes" type="radio" name = "sizes" value = "16.00" > Large - $16 <br/>
+            </div>
+            
+            <h3>Choose a crust type</h3>
+            <div class="crustDiv">
+                <input class="crustboxes" type="radio" name = "crusts" value = "2.00" > Thin Crust - $2 <br/>
+                <input class="crustboxes" type="radio" name = "crusts" value = "4.00" > Regular Crust - $4 <br/>
+                <input class="crustboxes" type="radio" name = "crusts" value = "6.00" > Deep Dish - $6 <br/>
+            </div>
+        
+            <h3>Choose a sauce</h3>
+            <div class="sauceDiv">
+                <input class="sauceboxes" type="radio" name = "sauces" value = "0.00" > Red - free <br/>
+                <input class="sauceboxes" type="radio" name = "sauces" value = "0.00" > White - free <br/>
+                <input class="sauceboxes" type="radio" name = "sauces" value = "0.00" > Green - free <br/>
+            </div>
+            
+            <h3> Choose pizza toppings (no more than three) </h3>
+            <div class=topDiv>
+                <input class="topboxes" type="checkbox" name = "peproni" value = "1.00" id > Pepperoni <br/>
+                <input class="topboxes" type="checkbox" name = "onion" value = "1.00" > Onion <br/>
+                <input class="topboxes" type="checkbox" name = "saus" value = "1.00" > Sausage <br/>
+                <input class="topboxes" type="checkbox" name = "pepper" value = "1.00" > Green Pepper <br/>
+                <input class="topboxes" type="checkbox" name = "olives" value = "1.00" > Olive <br/>
+                <input class="topboxes" type="checkbox" name = "garlic" value = "1.00" > Garlic <br/>
+            </div>
+        
+            <input type="button" id="purchaseButt" value="Checkout ">
+            <p id="changethis">change me</p>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

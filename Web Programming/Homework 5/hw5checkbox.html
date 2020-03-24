@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            $("#purchaseButt").click(function()
+            {
+                let ans = 0
+                $("input:checked").each(function()
+                {
+                    ans += Number(this.value)
+                });
+                $("#changethis").html(ans)
+            })
+        });
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> Total Purchase Options </h1>
+    <h3> What options would you like for your car? </h3>
+    <input type="checkbox" id="stereoBox" value="200"> Stereo ($200) <br>
+    <input type="checkbox" id="leatherBox" value="100"> Leather Seats ($100) <br>
+    <input type="checkbox" id="diceBox" value="10"> Fuzzy Dices ($10) <br>
+    <input type="checkbox" id="convertibleBox" value="1500"> Convertible Top ($1500) <br>
+    <input type="button" id="purchaseButt" value="Checkout ">
+    <p id="changethis">change me</p>
+</body>
+</html>

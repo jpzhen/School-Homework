@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            $("#button1to20").click(function()
+            {
+                let output = ""
+                for (let i = 0; i <= 20; i++) 
+                {
+                    setTimeout(function() 
+                    {
+                        output += i + "<br/>";
+                        $("#changeMe").html(output);
+                    }, 125 * i)
+                }
+            });
+
+            $("#button2to50").click(function()
+            {
+                let output = ""
+                for (let i = 2; i <= 50; i+=2) 
+                {
+                    if (i % 2 == 0)
+                    {
+                        setTimeout(function() 
+                        {
+                            output += i + "<br/>";
+                            $("#changeMe").html(output);
+                        }, 125 * i)
+                    }
+                }
+            });
+
+            $("#button50to5").click(function()
+            {
+                let output = ""
+                let j = 1
+                for (let i = 50; i >= 0; i-=5 ) 
+                {
+                    setTimeout(function() 
+                    {
+                        output += i + "<br/>";
+                        $("#changeMe").html(output);
+                    }, 125 * j)
+                    j++
+                }
+            });
+        });
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 7 Part 1</title>
+</head>
+
+<style>
+    .content
+    {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <table align="center">
+        <tr>
+            <td> <input type="button" id="button1to20" value="1 to 20"> </td>
+            <td> <input type="button" id="button2to50" value="2 to 50"></td>
+            <td> <input type="button" id="button50to5" value="50 to 5"></td>
+        </tr>
+    </table>
+    <p id="changeMe"></p>
+</body>
+</html>

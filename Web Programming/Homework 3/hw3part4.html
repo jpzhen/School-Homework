@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script> 
+		$(document).ready(function() 
+		{
+			$("#butt1").click(function()
+			{
+				let info = $("#input").val();
+				$("#replaceThis").html(info);
+			})
+		});
+	</script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Website for Testing</title>
+</head>
+<body>
+	<h1>Website for Testing Javascript and jQuery</h1>
+	<p id="replaceThis"> &lttext&gt </p>
+	<p> Please enter your name here: <input type="text" id="input"> </p>
+	<input type="button" value="Click Me" id="butt1"></button>
+</body>
+</html>

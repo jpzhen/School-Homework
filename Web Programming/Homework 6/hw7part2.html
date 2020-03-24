@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            $("#makeButt").click(function()
+            {
+                let usrInput = $("#textInput").val().split(" ");
+                let output = "<ul>";
+                for (let item of usrInput)
+                {
+                    if(item.toLowerCase() == "exit")
+                    {
+                        break;
+                    }
+                    else if(item.toLowerCase() != "skip")
+                    {
+                        output+= ("<li>" + item + "</li>");
+                    }
+                }
+                output += "</ul>";
+                $("#changeDiv").html(output);
+            })
+        })
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 7 Part 2</title>
+</head>
+<body>
+    <p> Please enter some words (each word is sperated by a space): <input type="text" id="textInput"> <input type="button" id="makeButt" value="Make List"></p>
+    <div id="changeDiv">
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            $("#weeklyInput").on("input", function()
+            {
+                let num = Number($(this).val())
+                let fedAmount = num * .15
+                let ficaAmount = num * .075
+                $("#fedChange").html("$" + fedAmount)
+                $("#ficaChange").html("$" + ficaAmount)
+                $("#netChange").html("$" + (num - fedAmount - ficaAmount))
+            })
+        });
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jun Zhen Assignment 1</title>
+</head>
+
+<style>
+    .content
+    {
+        text-align: left;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class=content>
+        <h1> Paycheck Calculator </h1>
+        <div style="display: inline-block;  text-align: left;">
+            <table cellspacing="10">
+                <tr>
+                    <td> Weekly Pay </td>
+                    <td> <input type="text" id="weeklyInput" placeholder="$0000.00"></td>
+                </tr>
+                <tr>
+                    <td id="fedText"> Federal Tax</td>
+                    <td id="fedChange"> $0000.00 </td>
+                </tr>
+                <tr>
+                    <td id="ficaText"> FICA </td>
+                    <td id=ficaChange> $0000.00 </td>
+                </tr>
+                <tr>
+                    <td id=netText> Net Pay</td>
+                    <td id=netChange> $0000.00 </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

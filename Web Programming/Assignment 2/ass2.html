@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name = 'author' content = 'Nomingerel Tserenjav, Jun Zhen'>
+    <title>Pizza Order</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // no more than three topping is allowed 
+            $('input.topboxes').on('change', function(evt) {
+                if($(this).siblings(':checked').length >= 3){
+                    this.checked = false;
+                }
+            });
+            // customer can change their sauce choice
+            $('input.sauceboxes').on('change', function(evt){
+                if($(this).siblings(':checked').length >= 1){
+                    this.checked = false;
+                }
+            });
+            // customer can change their pizza size choice
+            $('input.sizeboxes').on('change', function(evt){
+                if($(this).siblings(':checked').length >= 1){
+                    this.checked = false;
+                }
+            });
+            // customer can change their pizza crust choice 
+            $('input.crustboxes').on('change', function(evt){
+                if($(this).siblings(':checked').length >= 1){
+                    this.checked = false;
+                }
+            });
+
+            //Calculates and displays customer order
+            
+            $("#purchaseButt").click(function() {
+                var ans = 0
+                var total = ans;
+                if(!$('input.sizeboxes:checked').val()){
+                    alert('Select a pizza size!');
+                }
+                if($('#smallsize').is(':checked'))
+                    total = total + 10;
+                if($('#mediumsize').is(':checked'))
+                    total = total + 13;
+                if($('#largesize').is(':checked'))
+                    total = total + 16;
+                if($('#thinCr').is(':checked'))
+                    total = total + 2;
+                if($('#regCr').is(':checked'))
+                    total = total + 4;
+                if($('#deepD').is(':checked'))
+                    total = total + 6;
+                if($('#pep').is(':checked')&& $('#smallsize').is(':checked'))
+                    total = total + 1;
+                if($('#onio').is(':checked')&& $('#smallsize').is(':checked'))
+                    total = total + 1;
+                if($('#sausa').is(':checked')&& $('#smallsize').is(':checked'))
+                    total = total + 1;
+                if($('#pepp').is(':checked')&& $('#smallsize').is(':checked'))
+                    total = total + 1;
+                if($('#oliv').is(':checked')&& $('#smallsize').is(':checked'))
+                    total = total + 1;
+                if($('#garl').is(':checked')&& $('#smallsize').is(':checked'))
+                    total = total + 1;
+                if($('#pep').is(':checked')&& $('#mediumsize').is(':checked'))
+                    total = total + 2;
+                if($('#onio').is(':checked')&& $('#mediumsize').is(':checked'))
+                    total = total + 2;
+                if($('#sausa').is(':checked')&& $('#mediumsize').is(':checked'))
+                    total = total + 2;
+                if($('#pepp').is(':checked')&& $('#mediumsize').is(':checked'))
+                    total = total + 2;
+                if($('#oliv').is(':checked')&& $('#mediumsize').is(':checked'))
+                    total = total + 2;
+                if($('#garl').is(':checked')&& $('#mediumsize').is(':checked'))
+                    total = total + 2;
+                if($('#pep').is(':checked')&& $('#largesize').is(':checked'))
+                    total = total + 3;
+                if($('#onio').is(':checked')&& $('#largesize').is(':checked'))
+                    total = total + 3;
+                if($('#sausa').is(':checked')&& $('#largesize').is(':checked'))
+                    total = total + 3;
+                if($('#pepp').is(':checked')&& $('#largesize').is(':checked'))
+                    total = total + 3;
+                if($('#oliv').is(':checked')&& $('#largesize').is(':checked'))
+                    total = total + 3;
+                if($('#garl').is(':checked')&& $('#largesize').is(':checked'))
+                    total = total + 3;
+                if(total == ans)
+                    alert("No purhase found!");
+                $("#changethis").html("Your total is: $" + parseFloat(total).toFixed(2));
+ 
+            });
+        });
+    </script>
+</head>
+
+<style>
+    .content{
+        margin: 30px;
+    }
+     .content h1{
+        text-align: center;
+    }
+    .content img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+    }
+</style>
+
+<body>
+    <div class="content">
+            <h1> My Least Favourite Pizza Kitchen</h1>
+            <img src = "https://www.kingarthurflour.com/sites/default/files/styles/featured_image/public/recipe_legacy/1344-3-large.jpg?itok=n_EPr6zZ" align = "30px"/>
+            <form>
+            <h3> Choose a pizza size </h3>
+            <div class="sizeDiv">
+                <input class="sizeboxes" type="radio" name = "sizes" value = "10.00" id="smallsize" > Small - $10 <br/>
+                <input class="sizeboxes" type="radio" name = "sizes" value = "13.00" id="mediumsize"> Medium - $13 <br/>
+                <input class="sizeboxes" type="radio" name = "sizes" value = "16.00" id="largesize"> Large - $16 <br/>
+            </div>
+            
+            <h3>Choose a crust type</h3>
+            <div class="crustDiv">
+                <input class="crustboxes" type="radio" name = "crusts" value = "2.00" id="thinCr"> Thin Crust - $2 <br/>
+                <input class="crustboxes" type="radio" name = "crusts" value = "4.00" id="regCr"> Regular Crust - $4 <br/>
+                <input class="crustboxes" type="radio" name = "crusts" value = "6.00" id="deepD"> Deep Dish - $6 <br/>
+            </div>
+        
+            <h3>Choose a sauce</h3>
+            <div class="sauceDiv">
+                <input class="sauceboxes" type="radio" name = "sauces" value = "0.00" > Red - free <br/>
+                <input class="sauceboxes" type="radio" name = "sauces" value = "0.00" > White - free <br/>
+                <input class="sauceboxes" type="radio" name = "sauces" value = "0.00" > Green - free <br/>
+            </div>
+            
+            <h3> Choose pizza toppings (no more than three) </h3>
+            <div class=topDiv>
+                <input class="topboxes" type="checkbox" name = "peproni" value = "1.00" id='pep' > Pepperoni <br/>
+                <input class="topboxes" type="checkbox" name = "onion" value = "1.00" id='onio' > Onion <br/>
+                <input class="topboxes" type="checkbox" name = "saus" value = "1.00" id='sausa' > Sausage <br/>
+                <input class="topboxes" type="checkbox" name = "pepper" value = "1.00" id='pepp' > Green Pepper <br/>
+                <input class="topboxes" type="checkbox" name = "olives" value = "1.00" id='oliv' > Olive <br/>
+                <input class="topboxes" type="checkbox" name = "garlic" value = "1.00" id='garl' > Garlic <br/> <br/>
+            </div>
+        
+            <input type="button" id="purchaseButt" value="Checkout ">
+            <p id="changethis">Your total will display here!</p>
+            </form>
+    </div>
+    
+</body>
+</html>

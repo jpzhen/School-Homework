@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function ()
+        {
+            let same = "";
+            let whichOne = $("input:radio[name=degree]:checked").val();
+            $("#convertButt").one('click', function() 
+            {
+                if(whichOne == "Celsius")
+                {
+                    same = whichOne;
+                    $("#changeme").html("&#8451");
+                }
+                else if (whichOne == "Fahrenheit")
+                {
+                    same = whichOne;
+                    $("#changeme").html("&#8457");
+                }
+            }).click(function() 
+            {
+                let num = Number($("#textInput").val());
+                whichOne = $("input:radio[name=degree]:checked").val();
+                if (whichOne == "Celsius" && same != whichOne)
+                {
+                    let toCel = (num - 32) * (5/9);
+                    $("#textInput").val(toCel);
+                    $("#changeme").html("&#8451");
+                    same = whichOne;
+                }
+                else if (whichOne == "Fahrenheit" && same != whichOne)
+                {
+                    let toFeh = num * (1.8) + 32;
+                    $("#textInput").val(toFeh);
+                    $("#changeme").html("&#8457");
+                    same = whichOne;
+                }
+            });
+        });
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Jun Zhen Homework 5a </title>
+</head>
+
+<style>
+    .content
+    {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="content">
+        <h1> Temperator Converter </h1>
+        <form action="" name="temperature">
+            <p id="textbox"> Please enter the temperature <input type="text" id="textInput"> <a id="changeme"> degree </a> </p>
+            <input type="radio" name="degree" id="FahRadioButt" value="Fahrenheit"> Fahrenheit
+            <input type="radio" name="degree" id="CelRadioButt" value="Celsius"> Celsius 
+            <input type="button" id="convertButt" value="Convert!"> 
+        </form>
+    </div>
+</body>
+</html>
