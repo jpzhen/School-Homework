@@ -1,0 +1,28 @@
+--Warm Up--
+Total Tracks: 82
+
+Total Artists: 4
+
+Multi-Genre Artists:
+The Killers
+
+Multi-Disk Alumbs:
+Magnifique
+Sam's Town
+--Detailed Report--
+
+Multi-Genre Artists:
+  The Killers
+    Alternative
+    Electronic Rock
+
+Multi-Disk Albums:
+Ratatat
+  Magnifique
+The Killers
+  Sam's Town
+
+Possible Duplicates Albums:
+Hot Fuss
+  Alternative The Killers
+  Rap Jay Z

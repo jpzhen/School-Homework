@@ -1,0 +1,133 @@
+--Warm Up--
+Total Tracks: 4134
+
+Total Artists: 129
+
+Multi-Genre Artists:
+Canadian Brass
+Christopher Franke
+John Williams
+Tangerine Dream
+Vangelis
+various
+
+Multi-Disk Alumbs:
+Backtrackin'
+Basic Beethoven
+Basic Guitar
+Basic Handel
+BASIC MOZART
+Basic Tchaikovsky
+Book of Dreams
+Brandenburg Concertos (Academy of Ancient Music feat. conductor: Christopher Hogwood)
+Concert Program
+En concert Houston-Lyon
+Jazz Collection
+Les Concerts en Chine
+Live at Red Rocks
+Live in Paris and Toronto
+Liverpool Oratorio
+Northern Exposure
+Oh What a Feeling
+Oxygène
+Physical Graffiti
+Shine On - A Collection
+Star Wars: A New Hope
+Symphonic Rock: The British Invasion
+Synthesizer Greatest Hits
+The Art of Fugue - Wolfgang Rübsam
+The Best of Jethro Tull: The Anniversary Collection
+The Best of Rave
+The Best of The Doors
+Windham Hill: The First Ten Years
+Workshop of the Telescopes
+--Detailed Report--
+
+Multi-Genre Artists:
+  Canadian Brass
+    classical
+    jazz-blues
+    pop-rock
+  Christopher Franke
+    electronic-synth-experimental
+    soundtrack
+  John Williams
+    classical
+    soundtrack
+  Tangerine Dream
+    electronic-synth-experimental
+    new-age
+    soundtrack
+  Vangelis
+    electronic-synth-experimental
+    soundtrack
+  various
+    classical
+    electronic-synth-experimental
+    jazz-blues
+    new-age
+    pop-rock
+    soundtrack
+
+Multi-Disk Albums:
+Beethoven
+  Basic Beethoven
+Blue Oyster Cult
+  Workshop of the Telescopes
+Dave Brubeck
+  Jazz Collection
+Eric Clapton
+  Backtrackin'
+Handel
+  Basic Handel
+Jean-Michel Jarre
+  En concert Houston-Lyon
+  Les Concerts en Chine
+  Oxygène
+Jethro Tull
+  The Best of Jethro Tull: The Anniversary Collection
+Johann Sebastian Bach
+  The Art of Fugue - Wolfgang Rübsam
+John Tesh
+  Live at Red Rocks
+John Williams
+  Star Wars: A New Hope
+Led Zeppelin
+  Physical Graffiti
+Loreena McKennitt
+  Live in Paris and Toronto
+Mozart
+  BASIC MOZART
+Paul McCartney
+  Liverpool Oratorio
+Penguin Cafe Orchestra
+  Concert Program
+Peter Frampton
+  Shine On - A Collection
+Tangerine Dream
+  Book of Dreams
+Tchaikovsky
+  Basic Tchaikovsky
+The Academy of Ancient Music
+  Brandenburg Concertos (Academy of Ancient Music feat. conductor: Christopher Hogwood)
+The Doors
+  The Best of The Doors
+The London Symphony Orchestra
+  Symphonic Rock: The British Invasion
+various
+  Basic Guitar
+  Northern Exposure
+  Oh What a Feeling
+  Synthesizer Greatest Hits
+  The Best of Rave
+  Windham Hill: The First Ten Years
+
+Possible Duplicates Albums:
+Greatest Hits
+  classical Franz Liszt
+  classical Gioacchino Rossini
+  folk-world Cat Stevens
+  pop-rock Eurythmics
+  pop-rock Heart
+  pop-rock Pat Benetar
+  pop-rock Stray Cats
